@@ -1,0 +1,71 @@
+<ion-view view-title="Search">
+  <ion-content>
+    
+  <div class="list list-inset">
+  	<label class="item item-input">
+    	<i class="icon ion-search placeholder-icon"></i>
+    		<input type="text" placeholder="Search" ng-model="form.name">
+  	</label>
+	</div>
+
+	<div class="list">
+		<label class="item item-input item-select" ng-model="form.glass">
+    		<div class="input-label">
+      			Glass ID #?
+    		</div>
+    		<select>
+      			<option>1</option>
+      			<option>2</option>
+      			<option>3</option>
+      			<option>4</option>
+      			<option>5</option>
+      			<option>6</option>
+      			<option>7</option>
+      			<option>8</option>
+      			<option>9</option>
+      			<option>10</option>
+      			<option>11</option>
+      			<option>12</option>
+    		</select>
+  		</label>
+  </div>
+
+  <div class="list">
+    <label class="item item-input item-select" ng-model="form.organic">
+        <div class="input-label">
+            Is your beer organic?
+        </div>
+        <select>
+            <option>Y</option>
+            <option>N</option>
+        </select>
+      </label>
+  </div>
+
+  <div class="list">
+    <label class="item item-input item-select" ng-model="form.labels">
+        <div class="input-label">
+            Does your beer have labels?
+        </div>
+        <select>
+            <option>Y</option>
+            <option>N</option>
+        </select>
+      </label>
+  </div>
+
+  <div class="list list-inset">
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Year of the Beer" ng-model="form.year">
+    </label>
+  </div>
+
+	
+  </ion-content>
+
+  	<div class="bar bar-footer bar-balanced" ng-click="search()">
+  		<div class="title">Search</div>
+	</div>
+
+</ion-view>

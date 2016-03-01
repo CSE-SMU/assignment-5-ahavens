@@ -1,0 +1,21 @@
+<ion-view view-title="Beers">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="beer in data" href="#/app/beers/{{data.id}}">
+      	<div class="card">
+  			<div class="item item-divider">
+    			{{beer.name}}
+ 	 		</div>
+  			<div class="item item-text-wrap">
+    			{{beer.glasswareId}}
+    			{{beer.isOrganic}}
+    			{{beer.hasLabels}}
+    			{{beer.year}}
+  			</div>
+ 
+		</div>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
